@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/welcome"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/clouds"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/margin_8"
+        android:src="@drawable/ic_cancel"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/str_welcome"
+        android:layout_marginStart="@dimen/margin_24"
+        android:fontFamily="@font/chivo_bold"
+        android:textSize="@dimen/font_size_32"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/str_sign_up_with"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_16"
+        android:fontFamily="@font/chivo_regular"
+        android:textSize="@dimen/font_size_17"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_with_fb"
+        style="@style/Widget.LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_32"
+        android:text="@string/str_login_with_fb"
+        android:drawableEnd="@drawable/ic_facebook"
+        app:layout_constraintTop_toBottomOf="@id/tv_sign_up"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_with_email"
+        style="@style/Widget.LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_24"
+        android:text="@string/str_login_with_email"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_with_fb"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_acc"
+        android:background="@drawable/bg_gradient"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/chivo_regular"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_24"
+        android:text="@string/str_create_acc"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_with_email"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

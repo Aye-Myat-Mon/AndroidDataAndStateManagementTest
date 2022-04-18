@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AndroidDataAndStateManagementTest</string>
+    <string name="str_welcome">Welcome to \nReady To Travel</string>
+    <string name="str_sign_up_with">Sign up with Facebook for the most fulfilling trip planning experience with us!</string>
+    <string name="str_login_with_fb">Login with Facebook</string>
+    <string name="str_login_with_email">Login with email address</string>
+    <string name="str_create_acc">Create a new account</string>
+    <string name="str_almost_there">Almost there!</string>
+    <string name="str_complete_form">Complete the form below to create\nyour Ready To Travel account.</string>
+    <string name="str_mandatory">Mandatory*</string>
+    <string name="str_first_name">First Name*</string>
+    <string name="str_last_name">Last Name*</string>
+    <string name="str_email">Email Address*</string>
+    <string name="str_male">Male</string>
+    <string name="str_female">Female</string>
+    <string name="str_dob">Date of Birth*</string>
+    <string name="str_nationality">Nationality*</string>
+    <string name="str_residence">Country Residence*</string>
+    <string name="str_mobile_no">Mobile no.(Optional)</string>
+
+</resources>
